@@ -1,0 +1,29 @@
+#!/usr/bin/env sh
+
+set -eu
+self=$(basename -- "$0")
+db="$HOME"/work.txt
+
+help() {
+  printf "? %s [command]\n\
+  l  log entry\n\
+  e  edit journal\n\
+  v  view journal\n" "$self"
+  exit 1
+}
+
+[ "$#" -lt 1 ] && help
+
+log () {
+  if [ "$#" -lt 2 ]; then
+    printf "? %s %s [entry]\n" "$self" "$1"
+  fi
+  printf "%s  %s\n" "$(date +"%y%m%d%H%M")" "$2" | tee -a "$db"
+}
+
+case "$1" in
+  l | log ) log "$@" ;;
+  e | edit ) vim '+ normal GA' +startinsert "$db" ;;
+  v | view ) tail "$db" ;;
+  * ) help ;;
+esac
