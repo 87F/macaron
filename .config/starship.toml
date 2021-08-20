@@ -1,0 +1,15 @@
+format = """
+$hostname\
+$directory\
+$git_status\
+$git_branch\
+$package\
+$line_break\
+[>](white bold) """
+
+[directory]
+truncation_length = 8
+truncation_symbol = "…/"
+
+[package]
+format = "[$version](208 bold)"
