@@ -32,7 +32,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-source /usr/local/opt/asdf/asdf.sh
+export ASDF_DIR="/usr/local/opt/asdf/libexec"
+source /usr/local/opt/asdf/libexec/asdf.sh
 
 eval "$(starship init zsh)"
 
