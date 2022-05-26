@@ -1,12 +1,13 @@
 {
-  "timeStamp": 1645832263671,
-  "version": "1.41.8",
+  "timeStamp": 1653538957590,
+  "version": "1.42.4",
   "userSettings": {
     "uiTheme": "dark",
-    "externalLists": "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt",
+    "externalLists": "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt\nhttps://winhelp2002.mvps.org/hosts.txt",
     "ignoreGenericCosmeticFilters": true,
     "importedLists": [
-      "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt"
+      "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt",
+      "https://winhelp2002.mvps.org/hosts.txt"
     ],
     "showIconBadge": false
   },
@@ -15,6 +16,7 @@
     "ublock-filters",
     "ublock-badware",
     "ublock-privacy",
+    "ublock-quick-fixes",
     "ublock-abuse",
     "ublock-unbreak",
     "adguard-generic",
@@ -34,9 +36,9 @@
     "fanboy-social",
     "ublock-annoyances",
     "dpollock-0",
-    "mvps-0",
     "plowe-0",
     "THA-0",
+    "https://winhelp2002.mvps.org/hosts.txt",
     "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt"
   ],
   "hiddenSettings": {},
@@ -53,5 +55,5 @@
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
-  "userFilters": "! 2021-10-20 https://opn-ooo.atlassian.net\n\n! 2022-02-17 https://app.datadoghq.com\napp.datadoghq.com##.single-page-app_navbar_bits-logo--side.single-page-app_navbar_bits-logo\n"
+  "userFilters": ""
 }
