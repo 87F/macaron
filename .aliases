@@ -4,6 +4,28 @@ alias v="vim"
 alias la="ls-alh"
 alias ll="ls-alF"
 alias psef="ps-ef"
+alias sha="shasum -a 256"
+alias wget="wget -c"
+
+alias histat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
+
 alias vzc="vim ~/.zshrc"
 alias vza="vim ~/.aliases"
+alias vvi="vim ~/.vimrc"
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+
+alias reload=". ~/.zshrc && printf \"config reloaded\n\""
+alias zzz="pmset sleepnow"
+
+alias jwt="jq -R 'split(\".\") | .[1] | @base64d | fromjson' <<< $1"
+alias edit-wiki-style="vim $HOME/vimwiki_html/style.css"
+alias gather="open -a Firefox $GATHER"
+
+# git
+alias ga="git add"
+alias gp="git push"
+alias branch="git checkout -b $1"
+alias commit="git commit -m"
+alias gitlog="git log --graph --oneline --decorate"
+alias changes='git diff --shortstat "@{0 day ago}"'
+alias showtree="git log --all --graph --decorate --oneline --simplify-by-decoration"
