@@ -1,5 +1,4 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/postgresql@11/bin:$PATH
 export ZSH="/Users/joshua/.oh-my-zsh"
 
 source $HOME/.aliases
