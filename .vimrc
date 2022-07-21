@@ -16,6 +16,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'matze/vim-move'
 Plug 'junegunn/goyo.vim'
 Plug 'elixir-editors/vim-elixir', { 'for': 'elixir' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 colorscheme avanier
